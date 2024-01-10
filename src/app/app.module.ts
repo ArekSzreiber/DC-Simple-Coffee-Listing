@@ -1,39 +1,36 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {NgOptimizedImage} from "@angular/common";
+import {HttpClientModule} from "@angular/common/http";
 
 import {AppComponent} from './app.component';
+import {BackgroundComponent} from './coffee-listing/background/background.component';
+import {CardComponent} from "./coffee-listing/products/card/card.component";
 import {CoffeeListingComponent} from './coffee-listing/coffee-listing.component';
 import {HeadingComponent} from './coffee-listing/heading/heading.component';
-
-import {NgOptimizedImage} from "@angular/common";
-import {BackgroundComponent} from './coffee-listing/background/background.component';
-import {ProductsComponent} from './coffee-listing/products/products.component';
-import {CardComponent} from "./coffee-listing/products/card/card.component";
 import {PopularityTagComponent} from "./coffee-listing/products/card/popularity-tag/popularity-tag.component";
-import {PriceTagComponent} from "./coffee-listing/products/card/price-tag/price-tag.component";
-import {RatingComponent} from "./coffee-listing/products/card/rating/rating.component";
-import {HttpClientModule} from "@angular/common/http";
+import {PriceTagComponent} from './coffee-listing/products/card/price-tag/price-tag.component';
+import {ProductsComponent} from './coffee-listing/products/products.component';
+import {RatingComponent} from './coffee-listing/products/card/rating/rating.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BackgroundComponent,
+    CardComponent,
     CoffeeListingComponent,
     HeadingComponent,
-    CardComponent,
     PopularityTagComponent,
     PriceTagComponent,
+    ProductsComponent,
     RatingComponent,
-    BackgroundComponent,
-    ProductsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     NgOptimizedImage,
   ],
-  providers: [
-
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {
