@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+// noinspection HtmlUnknownTarget
 @Component({
   selector: 'app-background',
   template: `
