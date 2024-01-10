@@ -8,4 +8,5 @@ import {Product} from "./model";
 })
 export class ProductsComponent {
   @Input() products?: Product[];
+  @Input() showOnlyAvailable?: boolean;
 }

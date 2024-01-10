@@ -9,3 +9,22 @@
   flex-direction: column;
   align-items: center;
 }
+
+
+.button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: $label-text-size;
+  color: $font-white;
+  font-weight: 600;
+  background-color: transparent;
+  margin: 0.5rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.selected {
+  background-color: $primary;
+}
