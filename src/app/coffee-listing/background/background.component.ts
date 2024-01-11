@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
     .background-image {
       position: absolute;
       z-index: -1;
-      max-width: 100vw;
+      max-width: 100%;
       min-width: 1280px;
       width: auto;
       height: auto;
@@ -21,7 +21,6 @@ import { Component } from '@angular/core';
     .container {
       display: flex;
       justify-content: center;
-      overflow-x: hidden;
     }
 
   `]
