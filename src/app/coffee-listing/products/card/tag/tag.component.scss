@@ -2,14 +2,10 @@
 
 
 .tag {
+  @include center-text($small-text-size);
   background-color: $popular-background-color;
   border-radius: 1rem;
   color: $dark-1;
-  display: inline-block;
-  font-size: $small-text-size;
   font-weight: 600;
-  height: $small-text-size;
-  line-height: $small-text-size;
   padding: 0.75 * $small-text-size 1.25 * $small-text-size;
-  text-align: center;
 }

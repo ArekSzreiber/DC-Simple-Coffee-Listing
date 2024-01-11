@@ -7,7 +7,7 @@ import {Product} from "../model";
     <div class="container">
 
       <app-tag
-        *ngIf="product.popular || true"
+        *ngIf="product.popular"
         class="popular-tag"
       >Popular</app-tag>
 

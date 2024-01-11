@@ -10,4 +10,13 @@ $primary: #6e757d;
 
 
 $label-text-size: 14px;
+$price-text-size: 12px;
 $small-text-size: 10px;
+
+@mixin center-text($text-size) {
+  display: inline-block;
+  font-size: $text-size;
+  height: $text-size;
+  line-height: $text-size;
+  text-align: center;
+}

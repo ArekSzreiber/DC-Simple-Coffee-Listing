@@ -16,7 +16,11 @@
 
 .title { grid-area: title; }
 
-.price { grid-area: price; }
+.price {
+  grid-area: price;
+  align-self: end;
+  justify-self: end;
+}
 
 .rating { grid-area: rating; }
 
