@@ -40,8 +40,6 @@ import {Product} from "../model";
         <div *ngIf="!product.available" class="sold-text">Sold out</div>
       </div>
 
-
-      <!--      {{product | json}}-->
     </div>
   `,
   styleUrls: ['./card.component.scss']

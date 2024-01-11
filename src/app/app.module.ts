@@ -20,10 +20,10 @@ import {RatingComponent} from './coffee-listing/products/card/rating/rating.comp
     CardComponent,
     CoffeeListingComponent,
     HeadingComponent,
-    TagComponent,
     PriceTagComponent,
     ProductsComponent,
     RatingComponent,
+    TagComponent,
   ],
   imports: [
     BrowserModule,
