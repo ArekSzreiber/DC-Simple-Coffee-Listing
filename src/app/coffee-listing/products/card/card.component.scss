@@ -1,7 +1,10 @@
+@import "../../../../assets/css/variables";
+
 .container {  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 160px 1fr 1fr;
   grid-auto-flow: row;
+  row-gap: 10px;
   grid-template-areas:
     "image image"
     "title price"
@@ -14,7 +17,14 @@
   border-radius: 0.75rem;
 }
 
-.title { grid-area: title; }
+.title {
+  grid-area: title;
+}
+
+.name {
+  @include center-text($body-text-size);
+  font-weight: 600;
+}
 
 .price {
   grid-area: price;

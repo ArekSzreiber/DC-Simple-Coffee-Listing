@@ -20,7 +20,7 @@ import {Product} from "../model";
       >
 
       <div class="title">
-        <span>{{ product.name }}</span>
+        <span class="name">{{ product.name }}</span>
       </div>
 
       <div class="price">
