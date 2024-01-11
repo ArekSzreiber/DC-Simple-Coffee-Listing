@@ -6,32 +6,34 @@ import {HttpClient} from "@angular/common/http";
   selector: 'app-coffee-listing',
   template: `
     <app-background></app-background>
+    <div class="container">
+      <main class="main-card">
 
-    <main class="main-card">
+        <app-heading></app-heading>
 
-      <app-heading></app-heading>
+        <div>
+          <button
+            class="button"
+            [class.selected]="!onlyAvailable"
+            (click)="onlyAvailable = false"
+          >All Products
+          </button>
+          <button
+            class="button"
+            [class.selected]="onlyAvailable"
+            (click)="onlyAvailable = true"
+          >Available now
+          </button>
+        </div>
 
-      <div>
-        <button
-          class="button"
-          [class.selected]="!onlyAvailable"
-          (click)="onlyAvailable = false"
-        >All Products
-        </button>
-        <button
-          class="button"
-          [class.selected]="onlyAvailable"
-          (click)="onlyAvailable = true"
-        >Available now
-        </button>
-      </div>
+        <app-products
+          [products]="coffeeList"
+          [showOnlyAvailable]="onlyAvailable"
+        ></app-products>
 
-      <app-products
-        [products]="coffeeList"
-        [showOnlyAvailable]="onlyAvailable"
-      ></app-products>
+      </main>
+    </div>
 
-    </main>
   `,
   styleUrls: ['coffee-listing.component.scss'],
 })
