@@ -30,7 +30,10 @@ import {Product} from "../model";
       </div>
 
       <div class="rating">
-        <app-rating>product.rating</app-rating>
+        <app-rating
+          [rating]="product.rating"
+          [votes]="product.votes"
+        ></app-rating>
       </div>
 
       <div class="sold">

@@ -4,15 +4,12 @@ import {Product} from "./model";
 @Component({
   selector: 'app-products',
   template: `
-<!--    <p>products works!</p>-->
-<!--    {{showOnlyAvailable}}-->
-<!--    {{products | json}}-->
-<div class="container">
-  <app-card
-    *ngFor="let product of products; trackBy: trackById"
-    [product]="product"
-  ></app-card>
-</div>
+    <div class="container">
+      <app-card
+        *ngFor="let product of products; trackBy: trackById"
+        [product]="product"
+      ></app-card>
+    </div>
 
   `,
   styles: [`
