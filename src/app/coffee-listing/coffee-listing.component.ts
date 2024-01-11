@@ -39,7 +39,6 @@ import {HttpClient} from "@angular/common/http";
 })
 export class CoffeeListingComponent implements OnInit {
 
-
   coffeeList: Product[] = [];
   onlyAvailable: boolean = false;
   constructor(

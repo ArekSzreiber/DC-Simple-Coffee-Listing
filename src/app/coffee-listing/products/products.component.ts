@@ -8,7 +8,12 @@ import {Product} from "./model";
       <app-card
         *ngFor="let product of products; trackBy: trackById"
         [product]="product"
+        [class.hidden]="showOnlyAvailable && !product.available"
       ></app-card>
+      <!--For last items to fit the grid. Number of columns - 1 "empty cards" are needed-->
+      <div *ngFor="let i of Array(2)"
+        style="width: 260px; height: 258px"
+      ></div>
     </div>
 
   `,
@@ -22,6 +27,11 @@ import {Product} from "./model";
       justify-content: center;
       gap: 15px 30px;
     }
+
+    .hidden {
+      display: none;
+    }
+
   `]
 })
 export class ProductsComponent {
@@ -30,4 +40,6 @@ export class ProductsComponent {
   trackById(index: number, product: Product): number {
     return product.id;
   }
+
+  protected readonly Array = Array;
 }
