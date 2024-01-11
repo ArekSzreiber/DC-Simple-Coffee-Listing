@@ -1,17 +1,12 @@
 @import "../../../../../assets/css/variables";
 
-
-.container {
-  @include center-text($label-text-size);
-  font-weight: 600;
-}
-
 .rating,
 .votes
 {
   vertical-align: super;
   margin-left: 0.3rem;
-
+  @include center-text($label-text-size);
+  font-weight: 600;
 }
 
 .votes {

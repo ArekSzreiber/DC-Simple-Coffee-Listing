@@ -3,20 +3,16 @@ import {Component, Input} from '@angular/core';
 @Component({
   selector: 'app-rating',
   template: `
-    <div class="container">
-      <ng-container *ngIf="votes" >
-        <img src="assets/Star_fill.svg">
-        <span class="rating">{{rating}}</span>
-        <span class="votes">{{'(' + votes + ' votes)'}}</span>
-      </ng-container>
-
-      <ng-container *ngIf="!votes">
-        <img src="assets/Star.svg">
-        <span class="votes">No ratings</span>
-      </ng-container>
+    <div *ngIf="votes">
+      <img src="assets/Star_fill.svg">
+      <span class="rating">{{ rating }}</span>
+      <span class="votes">{{ '(' + votes + ' votes)' }}</span>
     </div>
 
-
+    <div *ngIf="!votes">
+      <img src="assets/Star.svg">
+      <span class="votes">No ratings</span>
+    </div>
   `,
   styleUrls: ['./rating.component.scss']
 })

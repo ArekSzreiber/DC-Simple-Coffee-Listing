@@ -37,7 +37,7 @@ import {Product} from "../model";
       </div>
 
       <div class="sold">
-        <span *ngIf="!product.available">Sold out</span>
+        <div *ngIf="!product.available" class="sold-text">Sold out</div>
       </div>
 
 
