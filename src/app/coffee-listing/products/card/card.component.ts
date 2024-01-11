@@ -1,10 +1,49 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Product} from "../model";
 
 @Component({
   selector: 'app-card',
-  templateUrl: './card.component.html',
+  template: `
+    <div class="container">
+
+      <app-tag
+        *ngIf="product.popular || true"
+        class="popular-tag"
+      >Popular</app-tag>
+
+      <img
+        class="image"
+        [ngSrc]="product.image"
+        width="260"
+        height="160"
+        [alt]="product.name"
+      >
+
+      <div class="title">
+        <span>{{ product.name }}</span>
+      </div>
+
+      <div class="price">
+        <app-price-tag>
+          {{ product.price }}
+        </app-price-tag>
+      </div>
+
+      <div class="rating">
+        <app-rating>product.rating</app-rating>
+      </div>
+
+      <div class="sold">
+        <span *ngIf="!product.available">Sold out</span>
+      </div>
+
+
+      <!--      {{product | json}}-->
+    </div>
+  `,
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
+  @Input() product!: Product;
 
 }

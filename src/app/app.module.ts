@@ -8,7 +8,7 @@ import {BackgroundComponent} from './coffee-listing/background/background.compon
 import {CardComponent} from "./coffee-listing/products/card/card.component";
 import {CoffeeListingComponent} from './coffee-listing/coffee-listing.component';
 import {HeadingComponent} from './coffee-listing/heading/heading.component';
-import {PopularityTagComponent} from "./coffee-listing/products/card/popularity-tag/popularity-tag.component";
+import {TagComponent} from "./coffee-listing/products/card/tag/tag.component";
 import {PriceTagComponent} from './coffee-listing/products/card/price-tag/price-tag.component';
 import {ProductsComponent} from './coffee-listing/products/products.component';
 import {RatingComponent} from './coffee-listing/products/card/rating/rating.component';
@@ -20,7 +20,7 @@ import {RatingComponent} from './coffee-listing/products/card/rating/rating.comp
     CardComponent,
     CoffeeListingComponent,
     HeadingComponent,
-    PopularityTagComponent,
+    TagComponent,
     PriceTagComponent,
     ProductsComponent,
     RatingComponent,
