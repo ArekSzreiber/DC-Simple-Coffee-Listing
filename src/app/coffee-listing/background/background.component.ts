@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
     .background-image {
       position: absolute;
       z-index: -1;
-      max-width: 100%;
+      max-width: 100vw;
       min-width: 1280px;
       width: auto;
       height: auto;
