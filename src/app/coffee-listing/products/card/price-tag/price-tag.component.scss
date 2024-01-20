@@ -1,0 +1,12 @@
+@import "../../../../../assets/css/variables";
+
+
+.tag {
+  @include center-text($price-text-size);
+  background-color: $price-background-color;
+  border-radius: 0.25rem;
+  color: $dark-1;
+  font-weight: 600;
+  padding: 0.5 * $price-text-size;
+
+}

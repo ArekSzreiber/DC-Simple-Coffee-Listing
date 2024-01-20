@@ -1,0 +1,14 @@
+@import "../../../../../assets/css/variables";
+
+.rating,
+.votes
+{
+  vertical-align: super;
+  margin-left: 0.3rem;
+  @include center-text($label-text-size);
+  font-weight: 600;
+}
+
+.votes {
+  color: $font-grey;
+}
