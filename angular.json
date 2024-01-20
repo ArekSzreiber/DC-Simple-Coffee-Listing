@@ -24,6 +24,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "baseHref": "https://arekszreiber.github.io/Simple-Coffee-Listing/",
             "outputPath": "dist/simple-coffee-listing",
             "index": "src/index.html",
             "browser": "src/main.ts",
