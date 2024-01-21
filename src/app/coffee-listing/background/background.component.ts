@@ -21,6 +21,7 @@ import { Component } from '@angular/core';
     .container {
       display: flex;
       justify-content: center;
+      max-width: 100vw;
     }
 
   `]
