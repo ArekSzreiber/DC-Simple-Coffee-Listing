@@ -5,7 +5,7 @@
 ## Live demo
 https://arekszreiber.github.io/Simple-Coffee-Listing/
 
-## Deploy:
+## Deploy
 run
 ```
 ng build --configuration production
